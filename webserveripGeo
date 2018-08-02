@@ -19,7 +19,7 @@ RUN mkdir -p /home/shaddar/geoip
 WORKDIR /home/shaddar
 
 #Point 1
-COPY /scripts/openFileLimit /home/shaddar
+COPY /scripts/openFileLimit /home/shaddar/
 RUN chmod +x openFileLimit && ./openFileLimit
 #one of many attempts to change containers openFile limit.(one line below)         
 COPY /configFiles/file-max /proc/sys/fs/file-max
