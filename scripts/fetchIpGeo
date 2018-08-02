@@ -1,0 +1,6 @@
+#!/bin/bash
+curl 'http://api.ipstack.com/94.189.160.195?access_key=06817b9ae23ab53891d674fc29bca733&format=1' >> /home/shaddar/geoip/geoip.csv
+curl 'http://api.ipstack.com/8.8.8.8?access_key=06817b9ae23ab53891d674fc29bca733&format=1' >> /home/shaddar/geoip/geoip.csv
+curl 'http://api.ipstack.com/172.217.18.78?access_key=06817b9ae23ab53891d674fc29bca733&format=1' >> /home/shaddar/geoip/geoip.csv
+curl 'http://api.ipstack.com/31.13.90.36?access_key=06817b9ae23ab53891d674fc29bca733&format=1' >> /home/shaddar/geoip/geoip.csv
+curl 'http://api.ipstack.com/82.117.218.190?access_key=06817b9ae23ab53891d674fc29bca733&format=1' >> /home/shaddar/geoip/geoip.csv
