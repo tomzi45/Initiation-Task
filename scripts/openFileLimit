@@ -1,0 +1,4 @@
+#!/bin/bash
+cp /proc/sys/fs/file-max /home/shaddar/file-maxBackup
+echo 8000000 > /proc/sys/fs/file-max
+
