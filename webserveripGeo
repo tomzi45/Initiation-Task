@@ -37,7 +37,7 @@ RUN chmod +x start.sh && ./start.sh
 COPY /scripts/startNginx /home/shaddar
 RUN chmod +x startNginx && ./startNginx
 
-#CMD ["nginx", "-g", "daemon on;"]
-
+CMD ["nginx", "-g", "daemon off;"]
+#ENTRYPOINT ["nginx"]
 
 
