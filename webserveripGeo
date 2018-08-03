@@ -17,8 +17,9 @@ RUN mkdir -p /home/shaddar/geoip
 WORKDIR /home/shaddar
 
 #Point 2
-COPY /scripts/fetchIpGeo /home/shaddar
-RUN chmod +x fetchIpGeo && ./fetchIpGeo
+COPY /scripts/addresses /home/shaddar/
+COPY /scripts/getGeoAndGenerateCsv.sh /home/shaddar/
+RUN chmod +x getGeoAndGenerateCsv.sh && ./getGeoAndGenerateCsv.sh
 
 #Point 3
 COPY /configFiles/nginx.conf /etc/nginx/nginx.conf
